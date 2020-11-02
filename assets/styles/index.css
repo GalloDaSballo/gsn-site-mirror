@@ -1,0 +1,353 @@
+@tailwind base;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  @apply bg-white font-helveticaNeueLight;
+}
+
+h1 {
+  @apply text-2xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+a {
+  @apply text-indigo-500;
+}
+
+a:hover {
+  @apply text-blue-600;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin: 0.5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply opacity-90 text-blue-900;
+}
+
+p {
+  @apply opacity-80 tracking-wider text-blue-900;
+}
+
+form {
+  @apply flex flex-col bg-gray-200 mt-10 p-4 pt-2 rounded;
+  clear: both;
+}
+
+@screen sm {
+  form {
+    @apply p-6 pt-4;
+  }
+}
+
+@screen lg {
+  form {
+    @apply w-2/3;
+  }
+}
+
+form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label {
+  @apply cursor-pointer font-silkaSemiBold text-gray-700 block pb-2;
+}
+
+.light {
+  @apply font-silkaRegular text-gray-500;
+}
+
+input:not([type='submit']),
+textarea,
+button:not(.burger),
+.react-select__control {
+  @apply font-silkaMedium text-lg flex-1 bg-white appearance-none border-b-2 border-transparent p-1 text-gray-700 leading-tight;
+}
+
+@screen sm {
+  input:not([type='submit']),
+  textarea,
+  button:not(.burger),
+  .react-select__control {
+    @apply p-4;
+  }
+}
+
+.react-select__group-heading {
+  @apply font-silkaMedium p-2 px-4 bg-gray-200 text-white;
+  margin: -9px 0px -5px !important;
+}
+
+input:not([type='submit']):hover,
+textarea:hover,
+button:not(.burger):hover,
+.react-select__control:hover {
+  @apply border-b-2 border-blue-200;
+}
+
+input:not([type='submit']):focus,
+textarea:focus,
+button:not(.burger):focus,
+.react-select__control:focus {
+  @apply outline-none border-blue-500;
+}
+
+.react-select__control {
+  border: 0 !important;
+  border-bottom: 2px solid white !important;
+}
+
+input:not([type='submit'])[disabled],
+textarea[disabled],
+button:not(.burger)[disabled],
+.react-select__control--is-disabled {
+  @apply border-gray-400 bg-gray-400 text-gray-700 cursor-not-allowed !important;
+}
+
+.react-select__control--is-disabled .react-select__indicators {
+  display: none;
+}
+
+
+.react-select__control:hover {
+  border-bottom: 2px solid rgb(62, 151, 235) !important;
+}
+
+.react-select__control:focus {
+  border: 0 !important;
+  border-bottom: 2px solid rgb(22, 121, 215) !important;
+}
+
+/* .react-select__menu-notice {
+  @apply font-silkaMedium leading-tight;
+
+  background-color: white !important;
+  color: #63B3ED !important;
+  cursor: pointer !important;
+  padding: 14px 20px !important;
+  border-top: 2px solid #f3f3f3;
+  min-height: 54px;
+} */
+
+.react-select__menu-notice,
+.react-select__option {
+  @apply font-silkaMedium leading-tight;
+
+  background-color: white !important;
+  color: #63B3ED !important;
+  cursor: pointer !important;
+  padding: 14px 20px !important;
+  border-top: 2px solid #f3f3f3;
+  min-height: 54px;
+}
+
+.react-select__option:hover {
+  background-color: #EBF8FF !important;
+  border-top: 2px solid white;
+  color: #63B3ED !important;
+}
+
+.react-select__option--is-selected {
+  border-top: 2px solid white;
+  color: white !important;
+  background-color: rgb(62, 151, 235) !important;
+}
+
+.react-select__menu {
+  border-radius: 0 !important;
+  margin-top: 0 !important;
+}
+
+.react-select__menu-list {
+  padding: 0 !important;
+}
+
+input[type='submit'],
+button:not(.burger) {
+  @apply font-silkaMedium text-lg tracking-wide border-2 flex-shrink-0 bg-blue-500 text-white font-bold py-2 px-4 rounded cursor-pointer;
+  min-width: 100%;
+}
+
+@screen sm {
+  input[type='submit'],
+  button:not(.burger) {
+    min-width: 200px;
+  } 
+}
+
+input[type='submit']:hover,
+button:not(.burger):hover {
+  @apply border-blue-300 bg-blue-300;
+}
+
+input[type='submit']:focus,
+button:not(.burger):focus {
+  @apply outline-none shadow-outline;
+}
+
+input[type='submit'][disabled],
+button:not(.burger)[disabled] {
+  @apply border-blue-200 border-2 bg-blue-200 text-white cursor-not-allowed;
+}
+
+dt {
+  @apply font-silkaSemiBold text-gray-800;
+}
+
+dd {
+  @apply font-silkaRegular;
+  margin: 0 0 16px 0;
+}
+
+@screen lg {
+  dl {
+    /* background: white;
+    border: 1px solid gray;
+    padding: 0 0 6px 0;
+    margin: 0; */
+    padding: 0;
+    margin: 0 0 6px 0;
+    clear: both;
+    width: 100%;
+    min-height: 26px;
+  }
+
+  dt {
+    float: left;
+    /* text-align: right; */
+    width: 20%;
+    padding: 2px 10px 0 3px;
+    margin: 0
+  }
+
+  dd {
+    float: left;
+    width: 80%;
+    padding: 2px 3px 0;
+    margin: 0
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+.nav-title {
+  padding-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .animate-height-0 {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .animate-height-40 {
+    height: 40px;
+    overflow: hidden;
+  }
+}
+
+@screen lg {
+  .card-custom-max-width {
+    max-width: 27rem;
+  }
+  
+  .card-custom-height {
+    height: 18rem;
+  }
+}
+
+.max-width-1\/2 {
+  max-width: 50%;
+}
+
+.section-min-height {
+  min-height: 70vh;
+}
+
+.burger {
+  transform: scale(0.6) translateX(20px);
+}
+
+.wrap-everything {
+  @apply whitespace-pre-line break-all;
+}
+
+
+.is-etherscan-arrow {
+  height: 1.2em;
+  position: relative;
+  top: -3px;
+  width: 1.3em;
+}
+
+.is-selected {
+  @apply text-blue-600 bg-white !important;
+}
+
+.ethereum-network-status {
+  height: 50px;
+}
+
+@screen sm {
+  .ethereum-network-status {
+    height: 43px;
+  }
+}
+
+/* custom css for the build seamless apps cards to stack side by side
+    in this very specific window width range */
+@media (min-width: 960px) and (max-width: 1140px) {
+  .lg-margin-override {
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+
+  .lg-card-width-and-padding-override {
+    max-width: 33%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg-card-description-padding-override {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
