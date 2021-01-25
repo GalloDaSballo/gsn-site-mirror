@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
 import Link from 'next/link'
-import { utils } from 'dapp-core'
+import { utils } from 'entreprenerd-dapp-core'
 
 import { LoadingSpinner } from 'lib/components/LoadingSpinner'
 import { relayHubEventsQuery } from 'lib/queries/relayHubEventsQuery'

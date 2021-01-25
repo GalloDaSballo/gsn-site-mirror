@@ -1,5 +1,5 @@
 import React from 'react'
-import { web3 } from 'dapp-core'
+import { web3 } from 'entreprenerd-dapp-core'
 
 export function ConnectWalletText() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { react } from 'dapp-core'
+import { react } from 'entreprenerd-dapp-core'
 import { withApollo } from 'react-apollo'
 
 import { withSendTransaction } from 'lib/components/hoc/withSendTransaction'

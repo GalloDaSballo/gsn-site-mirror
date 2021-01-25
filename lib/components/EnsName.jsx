@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import classnames from 'classnames'
-import { web3, utils } from 'dapp-core'
+import { web3, utils } from 'entreprenerd-dapp-core'
 
 export const EnsName = class _EnsName extends Component {
   state = {}

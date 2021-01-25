@@ -1,6 +1,6 @@
 import React from 'react'
 import { Query } from 'react-apollo'
-import { queries, web3, utils } from 'dapp-core'
+import { queries, web3, utils } from 'entreprenerd-dapp-core'
 
 import { DynamicApolloWrapper } from 'lib/components/DynamicApolloWrapper'
 import { networkIdToName } from 'lib/utils/networkIdToName'

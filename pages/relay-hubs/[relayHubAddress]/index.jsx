@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { utils } from 'dapp-core'
+import { utils } from 'entreprenerd-dapp-core'
 
 import { EthereumNetworkStatus } from 'lib/components/EthereumNetworkStatus'
 import { DynamicApolloWrapper } from 'lib/components/DynamicApolloWrapper'

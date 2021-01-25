@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
-import { queries } from 'dapp-core'
+import { queries } from 'entreprenerd-dapp-core'
 
 import { STATUS_IS_ZERO, USER_REJECTED_TX } from 'lib/constants'
 import { TxMessage } from 'lib/components/TxMessage'

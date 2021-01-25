@@ -16,7 +16,7 @@
     "apollo-link-ethereum-resolver-ethersjs": "^0.0.39",
     "babel-plugin-inline-react-svg": "^1.1.0",
     "classnames": "^2.2.6",
-    "dapp-core": "^0.7.2",
+    "entreprenerd-dapp-core": "^0.8.0",
     "ethers": "^4.0.33",
     "feather-icons-react": "^0.3.2",
     "graphql": "^14.4.2",
